@@ -35,6 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.cmbType = new System.Windows.Forms.ComboBox();
+            this.cmbFuel = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtWheels = new System.Windows.Forms.TextBox();
@@ -93,6 +95,24 @@
             this.cmbType.Name = "cmbType";
             this.cmbType.Size = new System.Drawing.Size(121, 21);
             this.cmbType.TabIndex = 6;
+            // 
+            // cmbFuel
+            // 
+            this.cmbFuel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFuel.FormattingEnabled = true;
+            this.cmbFuel.Location = new System.Drawing.Point(305, 18);
+            this.cmbFuel.Name = "cmbFuel";
+            this.cmbFuel.Size = new System.Drawing.Size(121, 21);
+            this.cmbFuel.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(225, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Combustivel";
             // 
             // btnAdd
             // 
@@ -165,7 +185,9 @@
             this.Controls.Add(this.txtWheels);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.cmbType);
+            this.Controls.Add(this.cmbFuel);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtModel);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtModelName);
@@ -186,6 +208,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.ComboBox cmbType;
+        private System.Windows.Forms.ComboBox cmbFuel;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtWheels;

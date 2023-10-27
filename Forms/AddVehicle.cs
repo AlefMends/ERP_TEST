@@ -21,6 +21,7 @@
         private void AddVehicle_Load(object sender, EventArgs e)
         {
             cmbType.DataSource = Data.VEHICLE_TYPES;
+            cmbFuel.DataSource = Data.FUEL_TYPES;
             txtWheels.Text = "0";
             txtKMs.Text = "0";
         }
@@ -28,7 +29,7 @@
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Vehicle vehicle = Factory.createNewVehicle(cmbType.SelectedValue.ToString());
-
+            vehicle.Fuel            = cmbFuel.SelectedValue.ToString();
             vehicle.Brand           = txtModel.Text;
             vehicle.ModelName       = txtModelName.Text;
             vehicle.Wheels          = Convert.ToInt32(txtWheels.Text);

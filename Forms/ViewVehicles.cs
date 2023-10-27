@@ -22,6 +22,7 @@
             listData.View = View.Details;
 
             listData.Columns.Add("Tipo");
+            listData.Columns.Add("Combustivel");
             listData.Columns.Add("Marca");
             listData.Columns.Add("Modelo");
             listData.Columns.Add("Rodas");
@@ -32,7 +33,7 @@
 
             foreach (var item in Data.VEHICLES)
             {
-                listData.Items.Add(new ListViewItem(new string[] {item.Type(), item.Brand, item.ModelName, item.Wheels.ToString(), item.Autonomy.ToString(), item.WeightSupported.ToString() }));
+                listData.Items.Add(new ListViewItem(new string[] {item.Type(), item.Fuel, item.Brand, item.ModelName, item.Wheels.ToString(), item.Autonomy.ToString(), item.WeightSupported.ToString() }));
             }
 
             listData.Columns[0].Width = -1;
